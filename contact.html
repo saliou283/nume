@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="contact.css">
+   <title>Contact - Scolarité</title>
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous !</h1>
+        
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Nous sommes là pour vous aider</h2>
+            <p>Pour toute question sur nos programmes d'études, nos admissions, ou toute autre demande, n'hésitez pas à nous contacter. Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.</p>
+            <p>Vous pouvez également nous joindre directement :</p>
+            <ul>
+                <li><strong>Téléphone :</strong> 77 280 27 24</li>
+                <li><strong>Email :</strong> salioup283@gmail.com</li>
+                <li><strong>Adresse :</strong> sambé 22300 diourbel</li>
+            </ul>
+        </section>
+
+        <form method="get" action="">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <label for="nom">Votre nom </label>
+                <input type="text" name="nom" id="nom">
+                <label for="prenom">Votre prénom </label>
+                <input type="text" name="prenom" id="prenom">
+                <label for="email">Votre e-mail </label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Votre souhait</legend>
+                <p>
+                    Faites un souhait que vous voudriez voir exaucé :<br>
+                    <label for="riche">Être bon</label> <input type="radio" name="souhait" value="riche" id="riche"> 
+                    <label for="celebre">Être<strong> trés bon</strong></label> <input type="radio" name="souhait" value="celebre" id="celebre"> 
+                    <label for="intelligent"> <strong> Être excellent</strong> </label> <input type="radio" name="souhait" value="intelligent" id="intelligent"> 
+                    <label for="autre">Autre...</label> <input type="radio" name="souhait" value="autre" id="autre"> 
+                </p>
+                <p>
+                    <label for="precisions">Si <strong>Autre,</strong> veuillez préciser :</label>
+                    <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                </p>
+            </fieldset>
+              <a href="#" class="btn btn-primary">envoyer</a>
+        </form>
+    </main>
+</body>
+</html>

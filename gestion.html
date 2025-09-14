@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Collège NUMEDUC</title>
+    <link rel="stylesheet" href="gestion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">NUMEDUC</div>
+        <nav class="main-nav">
+            <button class="nav-btn active" data-section="schedule">Emploi du temps</button>
+            <button class="nav-btn" data-section="students">Liste des élèves</button>
+            <button class="nav-btn" data-section="subjects">Matières</button>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        
+        <section id="schedule" class="page-section active">
+            <h2>Emploi du temps</h2>
+            <div class="controls">
+                <label for="schedule-class-select">Classe :</label>
+                <select id="schedule-class-select"></select>
+            </div>
+            <table id="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Heure</th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="students" class="page-section hidden">
+            <h2>Liste des élèves</h2>
+            <div class="controls">
+                <label for="students-level-select">Niveau :</label>
+                <select id="students-level-select"></select>
+                <label for="students-class-select">Classe :</label>
+                <select id="students-class-select"></select>
+            </div>
+            <ul id="students-list"></ul>
+        </section>
+
+        <section id="subjects" class="page-section hidden">
+            <h2>Matières</h2>
+            <ul id="subjects-list"></ul>
+        </section>
+        
+    </main>
+    
+    <script src="gestion.js"></script>
+</body>
+</html>
